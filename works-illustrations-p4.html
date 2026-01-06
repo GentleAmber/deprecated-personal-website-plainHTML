@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amber Wang</title>
+  <link rel="icon" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/basic.css">
+  <link rel="stylesheet" href="./styles/subpage.css">
+  <link rel="stylesheet" href="./styles/works.css">
+
+  <script src="./scripts/jquery-3.7.1.min.js"></script>
+  
+</head>
+<body>
+  <div class="page-bg" id="works-page-bg">
+    <div class="navbar">
+      <a href="./index.html" class="navbar-name">Amber Wang</a>
+      <div class="navbar-items-col">
+        <a href="./aboutme.html" id="aboutme">About Me</a>
+        <a href="./works.html" id="works">Works</a>
+        <a href="./interests.html" id="interests">Interests</a>
+        <!-- <a href="#">简体中文</a> -->
+      </div>
+      <div class="hidden navbar-dropdown-menu">
+        <a href="#" id="dropdown-btn">
+          <img id="dropdown-btn-img" src="./images/dropdown-arrow-svg.svg" width="40">
+        </a>
+        <div class="navbar-dropdown-items">
+          <a href="./aboutme.html" id="aboutme-dropdown">About Me</a>
+          <a href="./works.html" id="works-dropdown">Works</a>
+          <a href="./interests.html" id="interests-dropdown">Interests</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="in-project section" id="illu-project4" >
+      <div class="in-project-body">
+        <a class="return-link" style="font-size: 30px;" href="./works-illustrations.html">
+          <div class="return-link-icon"></div>
+          Return
+        </a>
+        <h2>A Mix Of Various Works</h2>
+        <p class="image-info">Mainly digital drawing including life drawing, fanarts, etc. 2020 - 2024</p>
+        <div class="maso-wrapper maso-switcher masonry">
+          <div class="maso-flow">
+            <img src="./images/illu-project4-1.jpg" />
+            <img src="./images/illu-project4-5.jpg" />
+            <img src="./images/illu-project4-6.jpg" />
+            <img src="./images/illu-project4-9.jpg" />
+          </div>
+
+          <div class="maso-flow">
+            <img src="./images/illu-project4-3.jpg" />
+            <img src="./images/illu-project4-4.jpg" />
+            <img src="./images/illu-project4-11.jpg" />
+            <img src="./images/illu-project4-12.jpg" />
+          </div>
+
+          <div class="maso-flow">
+            <img src="./images/illu-project4-7.jpg" />
+            <img src="./images/illu-project4-8.bmp" />
+            <img src="./images/illu-project4-2.jpg" />
+            <img src="./images/illu-project4-10.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>While every effort has been made to support different devices, this website is best experienced on a desktop computer.</p>
+      <p>© Amber Wang, 2025-2025</p>
+    </div>
+  </div>
+</body>
+<script>
+  $(document).ready(function () {
+    // Highlight the current nav button (coding/illustrations)
+    var workType = "illustrations";
+
+    navButtonHighlight();
+    function navButtonHighlight() {
+      $(".nav-button").each(function() {
+        const id = $(this).attr("id");
+        if (workType.indexOf(id) > -1) {
+          $(this).addClass("btn-highlight");
+          $(this).removeClass("default-btn");
+        } else {
+          $(this).removeClass("btn-highlight");
+          $(this).addClass("default-btn");
+        }
+      })
+    }
+  });
+</script>
+<script src="./scripts/subpageCommon.js"></script>
+</html>

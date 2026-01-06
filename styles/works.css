@@ -1,0 +1,376 @@
+:root {
+  --illu-info-font-size: 24px;
+}
+.hide {
+  display: none !important;
+}
+/* Coding */
+div.projects.coding {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.helper {
+  font-size: 18px;
+  margin: 0;
+}
+.game-window {
+  display: flex;
+  width: 70%;
+  height: 30%;
+}
+.game-title * {
+  color: #ff3f95;
+}
+.game-canvas {
+  border: 1px solid #ffffff;
+  border-radius: 0.5rem;
+  margin-top: 12px;
+  overflow: hidden;
+  height: auto;
+  width: 700px;
+}
+.carousel.works {
+  border-radius: 0.5rem;
+}
+.opeBtn {
+  background-color: black;
+  border: 1px solid white;
+  font-size: 24px;
+  padding: 5px 15px;
+  color: #ff3f95;
+}
+.opeBtn:hover {
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+}
+.screen-and-info {
+  display: flex;
+  gap: 20px;
+}
+.hud {
+  margin-top: 15px;
+  border: 2px solid rgb(52, 52, 52);
+  padding: 5px 30px 80px 10px;
+  border-radius: 0.5rem;
+}
+.game-control-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.game-control-btn button {
+  border-radius: 0.5rem;
+}
+.info {
+  margin-top: 12px;
+  width: 21%;
+}
+.intro-for-game {
+  margin-top: 12px;
+  font-size: 24px;
+}
+.intro {
+  font-size: 24px;
+}
+.game-header div, .hud div {
+  user-select: none;
+}
+.stat {
+  font-weight: 600;
+  font-size: 20px;
+  
+}
+.stat span {
+  font-weight: 300;
+}
+.mid-ele {
+  margin-top: 70px;
+}
+.last-ele {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+
+/* Illustrations */
+
+div.projects.illustrations {
+  padding: 0 10%;
+  margin-top: 5px;
+  display: grid;
+  Grid-template-columns: 1fr 1fr;
+  column-gap: 15%;
+}
+.wrapper {
+  position: relative;
+  height: 300px;
+  width: 80%; 
+  margin: 50px 0;
+  
+  display: flex;
+  flex-direction: row;
+  
+}
+.image-wrapper {
+  height: 300px;
+  width: 80%; 
+  overflow: hidden;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+}
+.image-wrapper img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  
+}
+#sketches {
+  object-position: center;
+}
+.see-project-hint {
+  color: #ff3f95 !important;
+}
+.book-design-image {
+  object-position: center;
+}
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 300px;
+  width: 90%;
+  left: 65%;
+}
+.header-wrapper h1 {
+  position: relative;
+  bottom: 0;
+  height: 300px;
+  max-width: 80%;
+  color: #fff;
+  font-size: 60px;
+  font-family: "Bowlby One SC", sans-serif;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+/* Individual illustration project*/
+.in-project {
+  margin-left: 3%;
+}
+.in-project-body {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 40px 0;
+  padding: 0 15%;
+}
+.in-project-body > .return-link {
+  text-decoration: underline;
+  align-self: start;
+  transition: .1s;
+}
+.in-project-body > .return-link:hover {
+  transform: scale(1.1);
+  color: white;
+}
+.in-project-body > .return-link:hover > .return-link-icon {
+  background-image: url("./../images/return-icon-active-svg.svg");
+}
+.return-link-icon {
+  background-image: url("./../images/return-icon-svg.svg");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+#home-deco-body {
+  padding: 0 5%;
+}
+.in-project-body h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0;
+}
+.in-project-body p {
+  margin: 0;
+  font-size: var(--illu-info-font-size);
+  align-self: center;
+}
+.in-project *:not(h2, p) {
+  color: #ff3f95;
+}
+.project-pics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin: 50px 0 5px 0;
+}
+.stickers.project-pics {
+  width: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+.stickers.project-pics img {
+  width: 110%;
+}
+.project-pics.various-sizes {
+  display: grid;
+  width: 80%;
+  gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.project-pics.various-sizes img{
+  width: 300px;
+  height: auto;
+  
+}
+.project-pics.tall-pics {
+  justify-content: space-evenly;
+}
+.project-pics.long-pics img {
+  width: 800px;
+  height: auto;
+}
+.project-pics.tall-pics img {
+  width: 300px;
+  height: auto;
+}
+.project-pics img {
+  width: 550px;
+  height: auto;
+}
+.maso-flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+.maso-flow {
+  margin: 0 10px;
+}
+.maso-wrapper {
+  max-width: 110rem;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  margin-top: 50px;
+}
+.masonry {
+  --gutter: 0.25em;
+  --flow-space: var(--gutter);
+  --switcher-target-container-width: 25rem;
+}
+.masonry img {
+  width: 100%;
+}
+.maso-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, 1em);
+  align-items: var(--switcher-vertical-alignment, flex-start);
+}
+.maso-switcher > * {
+  flex-grow: 1;
+  flex-basis: calc(
+    (var(--switcher-target-container-width, 40rem) - 100%) * 999
+  );
+}
+#home-deco {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 4%;
+  flex-wrap: nowrap;
+}
+#home-deco > img {
+  width: 12%;
+  max-width: 14%;
+}
+#home-deco > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  max-width: 60%;
+}
+#home-deco > div > img {
+  width: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .stickers.project-pics {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .info {
+    width: 100%;
+  }
+  .screen-and-info {
+    flex-direction: column;
+  }
+  div.projects.illustrations {
+    Grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 991px) {
+  div.projects.coding {
+    padding-right: 30%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #tank-canvas {
+    display: none;
+  }
+  #tank-game-body .helper > span{
+    display: none;
+  }
+  #tank-game-body .helper:after {
+    content: "Please use a desktop computer to play the game.";
+  }
+
+  #tank-game-body .game-control-btn, #tank-game-body .hud {
+    display: none;
+  }
+  .carousel.works {
+    display: none;
+  }
+  .game-canvas {
+    display: none;
+  }
+  div.projects.coding {
+    padding-right: 5%;
+  }
+  .in-project-body h2 {
+    font-size: 40px;
+  }
+  .project-pics.stickers {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  #illu-project2 .project-pics > img {
+    width: 100%;
+  }
+  .project-pics.long-pics img {
+    width: 100%;
+  }
+  .return-link {
+    display: none;
+  }
+  .header-wrapper h1 {
+    position: relative;
+    bottom: 0;
+    color: #fff;
+    font-size: 40px; 
+    font-family: "Bowlby One SC", sans-serif;
+    text-transform: uppercase;
+    user-select: none;
+    right: 45px;
+    top: 40px;
+  }
+  
+}

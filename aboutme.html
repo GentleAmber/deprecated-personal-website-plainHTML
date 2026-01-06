@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amber Wang</title>
+  <link rel="icon" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles/basic.css">
+  <link rel="stylesheet" href="./styles/subpage.css">
+
+  <script src="https://kit.fontawesome.com/c38ca9fc22.js" crossorigin="anonymous"></script>
+  <script src="./scripts/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+  <div class="page-bg">
+    <div class="navbar">
+      <a href="./index.html" class="navbar-name">Amber Wang</a>
+      <div class="navbar-items-col">
+        <a href="./aboutme.html" id="aboutme">About Me</a>
+        <a href="./works.html" id="works">Works</a>
+        <a href="./interests.html" id="interests">Interests</a>
+        <!-- <a href="#">简体中文</a> -->
+      </div>
+      
+      <div class="hidden navbar-dropdown-menu">
+        <a href="#" id="dropdown-btn">
+          <img id="dropdown-btn-img" src="./images/dropdown-arrow-svg.svg" width="40">
+        </a>
+        <div class="navbar-dropdown-items">
+          <a href="./aboutme.html" id="aboutme-dropdown">About Me</a>
+          <a href="./works.html" id="works-dropdown">Works</a>
+          <a href="./interests.html" id="interests-dropdown">Interests</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="about-me-content">
+      <img src="./images/profile.jpeg" id="about-me-profile"/>
+      <div id="about-me-intro">
+        <h1>
+        Hi, I'm Amber. I do <span class="text-highlight">full-stack web dev</span> 
+        and <span class="text-highlight">illustrations</span>.
+        </h1>
+        <h2>
+        Below is a little more about me.
+        </h2>
+      </div>
+      <div class="row-showcase">
+        <div class="showcase-unit" id="about-me-work">
+          
+          <h2 class="showcase-title">Work Experience</h2>
+          <ul class="showcase-ul">
+            <li class="showcase-li">
+              <div class="showcase-li-title"><div>Shop Assistant (part-time)</div><div>Apr 2025 - now</div></div>
+              <div class="showcase-p workplace-and-time"><div>Starlight Chinese Supermarket</div><div>Edinburgh, UK</div></div>
+              <ul class="showcase-ul-2">
+                <div>
+                  I moved back to Edinburgh where I did my master's studies. I work at the supermarket part-time 
+                  to earn some money and to learn interacting with different people.
+                </div>
+              </ul>
+            </li>
+
+            <li class="showcase-li">
+              <div class="showcase-li-title"><div>Game Designer</div><div>Jan 2024 - Sep 2024</div></div>
+              <div class="showcase-p workplace-and-time"><div>Lingxi Games, Alibaba Group</div><div>Guangzhou, CN</div></div>
+              
+            </li>
+            
+            <li class="showcase-li">
+              <div class="showcase-li-title"><div>Game Designer (Intern)</div><div>Aug 2023 - Nov 2023</div></div>
+              <div class="showcase-p workplace-and-time"><div>Lingxi Games, Alibaba Group</div><div>Guangzhou, CN</div></div>
+              <ul class="showcase-ul-2">
+                <div>This job at Lingxi Games was meaningful to me. I love good games. I learnt a lot
+                  about game design and development while I was there. However I left because of the management style, the type of game being made, and my personal reason.
+                  When I was there, I —
+                </div>
+                <li class="showcase-li-2">
+                  Designed a battle pass system and other features. Analysed 480,000 player data entries to ensure fair difficulty curves.
+                </li>
+                <li class="showcase-li-2">
+                  Produced detailed, pseudocode-style documentations for every design. 
+                </li>
+                <li class="showcase-li-2">
+                  Collaborated closely with programmers, UX designers, and game testers to ensure smooth development.
+                </li>
+              </ul>
+            </li>
+
+            <li class="showcase-li">
+              <div class="showcase-li-title"><div>Illustrator</div><div>Jun 2020 - Jul 2021</div></div>
+              <div class="showcase-p workplace-and-time"><div>Freelance</div><div>Remote</div></div>
+              <ul class="showcase-ul-2">
+                <div>While working on my portfolio and postgraduate application, I undertook several paid illustration commissions.
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="showcase-unit" id="about-me-edu">
+          <h2 class="showcase-title">Education</h2>
+          <ul class="showcase-ul">
+            <li class="showcase-li">
+              <div class="showcase-li-title"><div>Self-educated</div><div>Dec 2024 - now</div></div>
+              <div class="showcase-p workplace-and-time"><div>Online Resources</div><div>Remote</div></div>
+              <ul class="showcase-ul-2">
+                <div>
+                  I started learning programming after quitting game designer, initially to understand how games run. 
+                  Then with the studies going deeper and me feeling the need to understand more of the foundations, I ended up having —
+                </div>
+                <li class="showcase-li-2">
+                  Learnt Java, HTML, JS, EJS, CSS and a bit of Python. Developed a multithreaded game, an instant messaging system, and a database-driven website implementing CRUD operations in the aforementioned languages.
+                  <br/><a href="./works.html"><div class="link">See works here</div></a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="showcase-li">
+              <div class="showcase-li-title"><div>MA, Illustration</div><div>Sep 2022 - Dec 2023</div></div>
+              <div class="showcase-p workplace-and-time"><div>The University of Edinburgh</div><div>Edinburgh, UK</div></div>
+              <ul class="showcase-ul-2">
+                <div>I developed good aesthetic taste and made some of the life-changing friends there.</div>
+              </ul>
+            </li>
+
+            <li class="showcase-li">
+              <div class="showcase-li-title"><div>BE, Traffic Engineering</div><div>Sep 2016 - Jul 2020</div></div>
+              <div class="showcase-p workplace-and-time"><div>Tongji University</div><div>Shanghai, CN</div></div>
+              <ul class="showcase-ul-2">
+                <div>I won a schoolarship and graduated with the grade of 84.56/100.
+                  Courses including: Advanced Mathematics, C/C++ Programming, Foundation of Database, Probability and Mathematical Statistics, Linear Algebra.
+                </div>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="contact-me">
+        <h2>Contact me</h2>
+        <div>You can find more technical details about my experience on Linkedin, or email me regarding work opportunities.</div>
+        <div id="contact-me-icons">
+          <a href="https://www.linkedin.com/in/amber-wang-658817252/" target="_blank"><i class="fab fa-linkedin-in icon"></i></a>
+          <a href="mailto:wangkexin4321@gmail.com" id="emailaddress"><i class="fa-solid fa-envelope icon"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer">
+      <p>While every effort has been made to support different devices, this website is best experienced on a desktop computer.</p>
+      <p>© Amber Wang, 2025-2025</p>
+    </div>
+  </div>
+</body>
+<script src="./scripts/subpageCommon.js"></script>
+<script>
+  $(function () {
+    const emailaddress = $("#emailaddress");
+    var ifAddressAppeared = false;
+    const contactmeicons = $("#contact-me-icons");
+    emailaddress.on("click", function() {
+      if (!ifAddressAppeared) {
+        contactmeicons.after('<span class="popped-address" id="my-address">wangkexin4321@gmail.com</span>');
+        ifAddressAppeared = true;
+      } else {
+        $("#my-address").remove();
+        ifAddressAppeared = false;
+      }
+      
+    }) 
+  })
+</script>
+</html>

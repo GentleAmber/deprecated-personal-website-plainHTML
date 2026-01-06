@@ -1,0 +1,458 @@
+.page-bg {
+  font-weight: 600; /* <weight>: Use a value from 200 to 1000 */
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  justify-content: space-between;
+}
+#about-me-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#about-me-content h1, #about-me-content h2 {
+  user-select: none;
+  margin: 10px 0;
+}
+#about-me-content h1 {
+  font-size: 50px;
+}
+.page-bg * {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: white;
+}
+
+.btn-group { 
+  display: inline-flex;
+  margin-left: 8%;
+  margin-top: 3%;
+}
+.btn-group > button {
+  font-weight: 300; /* <weight>: Use a value from 200 to 1000 */
+  padding: 1px 15px;
+  background-color: black;
+  color: white;
+  border-color: white;
+  border-width: 2px;
+}
+.btn-group > button {
+  font-size: 25px;
+}
+.btn-group > button:nth-child(1) {
+  
+  border-top-left-radius: 0.38em;
+  border-bottom-left-radius: 0.38em;
+}
+.btn-group > button:last-child {
+  border-top-right-radius: 0.38em;
+  border-bottom-right-radius: 0.38em;
+}
+.btn-group button.btn-highlight {
+  background-color: white;
+  color: #ff3f95;
+  font-weight: 700;
+}
+.btn-group button.default-btn:hover {
+  background-color: rgb(227, 226, 226);
+  color: #ff3f95;
+}
+.navbar {
+  padding: 20px 0 15px 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  border-bottom: solid 1.5px rgb(84, 83, 83);
+}
+.navbar a {
+  color: #ff3f95;
+}
+.navbar-name {
+  font-family: "Bowlby One SC", sans-serif;
+  padding-left: var(--page-left-padding);
+  font-size: 35px;
+}
+.navbar-items-col {
+  padding-right: 3%;
+  display: flex;
+  column-gap: 35px;
+  Align-items: center;
+}
+.navbar-items-col a {
+  font-weight: 600;
+}
+.navbar a:not(.nav-item-highlight):hover {
+  animation: navItemColorChange 0.15s ease-out forwards;
+
+}
+a {
+  text-decoration: none;
+}
+@keyframes navItemColorChange {
+  to {
+    color: #ffffff;
+  }
+}
+.nav-item-highlight {
+  text-decoration: underline;
+  color: white !important;
+  font-weight: 700 !important;
+  
+}
+
+/* For special features*/
+.carousel.works {
+  margin-top: 12px;
+  position: relative;
+  width: 700px;
+  height: auto;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+.carousel-track a {
+  display: block;
+}
+.carousel.works img {
+  width: 700px;
+  height: auto;
+  object-fit: cover;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(58, 57, 57, 0.7);
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 5px;
+}
+
+button.prev { left: 10px; }
+button.next { right: 10px; }
+
+.zoom-in {
+  cursor: zoom-in;
+}
+
+/* Interest page */
+.interests-list {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.interest {
+  padding: 2% 1.5%;
+  width: 90%;
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 24px;
+}
+.interest img {
+  border-radius: 0.5rem;
+}
+#interest-game {
+  height: 400px;
+}
+#interest-game img{
+  width: 15%;
+}
+.interest p{
+  margin: 0;
+  flex-shrink: 2;
+}
+span.text-highlight {
+  color: #ff3f95;
+  font-weight: 700;
+}
+.interests-list h2 {
+  display: block;
+  font-weight: 700;
+  color: #ff3f95;
+  margin: 2% 0 0 0;
+}
+#about-me-profile {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  width: 15%;
+  border-radius: 0.5rem;
+  align-self: center;
+  
+}
+.link {
+  color: rgb(96, 159, 231); text-decoration: underline;
+}
+.row-showcase {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 120px 30px 10px;
+  width: 85%;
+  max-width: 95%;
+  gap: 70px;
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #5e5e5e;
+}
+.showcase-unit {
+  flex: 1;
+}
+.showcase-li-title {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.showcase-li-title > div {
+  color: #ff3f95;
+  font-weight: 700;
+  font-size: 24px;
+}
+.showcase-li:not(:first-child) {
+  margin-top: 36px;
+}
+.showcase-title {
+  color: #ff3f95;
+  border-left: 10px solid #ff3f95;
+  padding-left: 10px;
+  font-weight: 700;
+}
+.showcase-ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+.showcase-ul-2 {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+.showcase-p {
+  display: flex;
+  justify-content: space-between;
+}
+.showcase-p > div{
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+  color: #ff3f95;
+}
+.link.showcase-li-title > div {
+  color: rgb(96, 159, 231);
+}
+.workplace-and-time {
+  margin-bottom: 16px;
+  border-bottom: 1px solid #ff3f95;
+}
+
+#about-me-intro {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #5e5e5e;
+  text-align: center;
+  margin: 0 5% 0 5%;
+}
+#contact-me {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  color: #ff3f95;
+  position: relative;
+  text-align: center;
+}
+#contact-me > h2 {
+  color: #ff3f95;
+}
+#contact-me div {
+  margin-bottom: 20px; 
+  font-size: 22px;
+}
+
+/* Icons */
+#contact-me-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#contact-me-icons a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1;
+}
+#contact-me-icons a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3;
+}
+#contact-me-icons a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg);
+}
+#contact-me-icons a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: .5s;
+  z-index: 2;
+}
+#contact-me-icons a:hover:before {
+  top: 0;
+}
+#contact-me-icons a:nth-child(1):before{
+  background: #3b5999;
+}
+#contact-me-icons a:nth-child(2):before{
+  background: #dd4b39;
+}
+.popped-address {
+  display: block;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 80px;
+}
+
+
+@media screen and (max-width: 1199px) {
+  
+  #interest-game{
+    display: inline-flex;
+  }
+  .interest {
+    flex-wrap: nowrap;
+  }
+  .interest img {
+    max-width: 50%;
+    height: auto;
+  }
+  .showcase-li-title > div {
+    font-size: 22px;
+  }
+  .showcase-title {
+    font-size: 26px;
+  }
+  .showcase-p > div {
+    font-size: 20px;
+  }
+  .showcase-ul-2 {
+    font-size: 18px;
+  }
+  #contact-me div {
+    font-size: 20px;
+    margin: 0 3% 2% 3%;
+  }
+  #about-me-profile {
+    width: 200px;
+  }
+  #about-me-intro h2 {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 991px) {
+  #interest-game-title {
+    margin: 0 0 10% 0;
+  }
+  #interest-exercise-title {
+    margin: 10% 0 0 0;
+  }
+  .navbar {
+    padding: 20px 2% 15px 2%;
+  }
+  .btn-group {
+    margin-left: 3%;
+  }
+  div.projects.coding {
+    padding-right: 40%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding: 20px 5% 15px 5%;
+  }
+  .navbar-name {
+    font-size: 25px;
+  }
+  .navbar-items-col {
+    display: none;
+  }
+  .navbar-dropdown-menu {
+    display: block;
+    position: relative;
+  }
+  .navbar-dropdown-items {
+    display: none;
+    position: absolute;
+    border: 1px white solid;
+    min-width: 80px;
+    z-index: 1;
+    background-color: black;
+    right: 30%;
+  }
+  .navbar-dropdown-items a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border-bottom: 1px white solid;
+  }
+
+  .row-showcase {
+    flex-direction: column;
+  }
+  #about-me-content h1 {
+    font-size: 40px;
+  }
+  .showcase-li-title > div {
+    font-size: 20px;
+  }
+  .showcase-li-title > div:nth-child(2) {
+    font-size: 18px;
+  }
+  .showcase-p > div {
+    font-size: 18px;
+  }
+  .interest {
+    font-size: 20px;
+    flex-wrap: wrap;
+  }
+  #interest-exercise-title {
+    margin: 60% 0 0 0;
+  }
+  #interest-game img {
+    width: 20%;
+  }
+  #about-me-content h2 {
+    user-select: none;
+    margin: 10% 0 10px 0;
+  }
+  .see-project-hint {
+    display: none;
+  }
+}
