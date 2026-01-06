@@ -1,2 +1,2 @@
-# amberwang.github.io
+# gentleamber.github.io
 My personal website
