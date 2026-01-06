@@ -443,7 +443,7 @@ span.text-highlight {
     flex-wrap: wrap;
   }
   #interest-exercise-title {
-    margin: 60% 0 0 0;
+    margin: 70% 0 0 0;
   }
   #interest-game img {
     width: 20%;
@@ -455,4 +455,5 @@ span.text-highlight {
   .see-project-hint {
     display: none;
   }
+
 }

@@ -47,7 +47,6 @@ body {
 #index-page-bg {
   text-align: center;
   height: 100vh;
-  padding-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
